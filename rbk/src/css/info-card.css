@@ -1,0 +1,40 @@
+.info-card {
+  padding: 40px 48px 56px;
+  border-radius: 4px;
+  box-shadow: 0 10px 29px rgba(92,141,255,.22);
+  background-color: #fff;
+}
+
+.info-card__image {}
+
+.info-card__image-link {
+  width: 360px;
+  height: 240px;
+  margin-bottom: 24px;
+}
+
+.info-card__title {}
+
+.info-card__description {
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.info-card__button {
+  margin-top: 24px;
+}
+
+@media (max-width: 1022px) {
+  .info-card {
+    padding: 35px 35px 35px;
+  }
+}
+
+@media (max-width: 766px) {
+  .info-card {
+    padding: 27px 30px 35px;
+  }
+  .info-card__button {
+    width: 100%;
+  }
+}

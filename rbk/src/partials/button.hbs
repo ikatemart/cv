@@ -1,0 +1,36 @@
+{{!--
+class
+fill
+shadowGreen
+shadowBlue
+strokeWhite
+strokeWhite1
+strokeGreen
+href
+label
+modalId
+--}}
+<button
+  class="
+    {{class}}
+    button
+    {{#if fill}}button--fill{{/if}}
+    {{#if shadowGreen}}button--shadow-green{{/if}}
+    {{#if shadowBlue}}button--shadow-blue{{/if}}
+    {{#if strokeWhite}}button--stroke-white{{/if}}
+    {{#if strokeWhite1}}button--stroke-white-1{{/if}}
+    {{#if strokeGreen}}button--stroke-green{{/if}}
+  "
+  {{#if modalId}}data-modal-id="{{modalId}}"{{/if}}
+>
+  {{#if href}}
+    <a class="button__link" href="{{href}}">{{label}}</a>
+  {{else}}
+    {{label}}
+  {{/if}}
+</button>
+
+
+
+
+

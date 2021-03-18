@@ -1,0 +1,70 @@
+<section class="tariffing">
+  {{> heading 
+    tag="h2"
+    class="tariffing__title"
+    text="Прозрачные тарифы <br> на интернет-эквайринг"
+  }}
+  <div class="tariffing__columns">
+    <div class="tariffing__column">
+      {{> link
+        class="tariffing__link"
+        href="#"
+        label="Что такое интернет-эквайринг?"
+      }}
+      {{!-- <a class="tariffing__link" href="#">Что такое интернет-эквайринг?</a> --}}
+      <h3 class="tariffing__heading">Тариф для компаний с&nbsp;оборотом более 2&nbsp;млн&nbsp;₽&nbsp;в&nbsp;месяц</h3>
+      <table class="tariffing__table">
+        <thead class="tariffing__table-head">
+          <tr class="tariffing__table-row">
+            <th class="tariffing__table-cell">Способы оплаты</th>
+            <th class="tariffing__table-cell">Комиссия</th>
+          </tr>
+        </thead>
+        <tbody class="tariffing__table-body">
+          <tr class="tariffing__table-row">
+            <td class="tariffing__table-cell">Банковские карты</td>
+            <td class="tariffing__table-cell">от 1,2%</td>
+          </tr>
+          <tr class="tariffing__table-row">
+            <td class="tariffing__table-cell">Электронные деньги</td>
+            <td class="tariffing__table-cell">от 1,8%</td>
+          </tr>
+          <tr class="tariffing__table-row">
+            <td class="tariffing__table-cell">Наличные</td>
+            <td class="tariffing__table-cell">от 1,2%</td>
+          </tr>
+          <tr class="tariffing__table-row">
+            <td class="tariffing__table-cell">Интернет-банкинг</td>
+            <td class="tariffing__table-cell">от 2%</td>
+          </tr>
+          <tr class="tariffing__table-row">
+            <td class="tariffing__table-cell">Выплаты на карты</td>
+            <td class="tariffing__table-cell">от 0,8%</td>
+          </tr>
+        </tbody>
+      </table>
+      {{> button
+        class="tariffing__button"
+        fill=true
+        shadowGreen=true
+        label="Определить свой тариф"
+      }}
+    </div>
+    <div class="tariffing__column">
+      <div class="tariffing__comission">
+        {{> info-card
+          class="tariffing__card tariffing__card--transparent"
+          title="Гибкие ставки"
+          description="Тарифные планы RBK.money подстраиваются под оборот клиента: с ростом объемов комиссия снижается."
+        }}
+        {{> info-card
+          class="tariffing__card"
+          title="Индивидуальный подход"
+          description="Для нас не важно крупный онлайн бизнес или начинающий предприниматель, для всех мы подберем наиболее выгодный тариф и обеспечим высокое качество сервиса."
+          buttonLabel="Узнать больше"
+        }}
+      </div>
+    </div>
+  </div>
+</section>
+

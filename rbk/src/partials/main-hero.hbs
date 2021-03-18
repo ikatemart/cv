@@ -1,0 +1,35 @@
+<main class="main-hero">
+  <div class="main-hero__body-wrap">
+    <div class="main-hero__header">
+      {{> header}}
+    </div>
+    <div class="main-hero__body">
+      <div class="main-hero__content">
+        {{> heading
+          tag="h1"
+          class="main-hero__title"
+          text="Сервис по приему<br>платежей на сайте"
+        }}
+        <div class="main-hero__description">
+          <div class="main-hero__desription-line">Подключение: 0 руб.</div>
+          <div class="main-hero__desription-line">Абонентская плата: 0 руб.</div>
+          <div class="main-hero__desription-line">Вывод средств: в удобные дни</div>
+        </div>
+        <div class="main-hero__buttons">
+          {{> button
+            class="main-hero__button"
+            fill=true 
+            shadowBlue=true 
+            label="Подключиться"
+          }}
+          {{> button
+            class="main-hero__button"
+            strokeWhite=true 
+            label="Как это работает"
+          }}
+        </div>
+      </div>
+      <div class="main-hero__image"></div>
+    </div>
+  </div>
+</main>

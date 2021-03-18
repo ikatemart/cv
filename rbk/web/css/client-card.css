@@ -1,0 +1,87 @@
+.client-card {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;;
+  padding: 40px;
+  width: 264px;
+  min-height: 320px;
+  border-radius: 4px;
+  box-shadow: 0 12px 35px rgba(92,141,255,.22);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform .3s;
+ }
+ .client-card:hover {
+   transform: translateY(-8px);
+ }
+ 
+.client-card__image {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background-color: rgb(233, 126, 233);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 30px;
+  margin-top: -80px;
+ }
+ 
+.client-card__quote {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+  word-break: break-word;
+  flex-grow: 1;
+  margin-bottom: 20px;
+ }
+ .client-card__quote:hover { 
+  color: #968cff;
+ }
+ 
+.client-card__company-name {
+  font-size: 16px;
+}
+ 
+.client-card__company-type {
+  font-size: 12px;
+ }
+
+@media (max-width: 1022px) {
+  .client-card {
+    padding: 32px;
+    width: 240px;
+    min-height: 270px;
+  }
+  .client-card__image {
+    width: 100px;
+    height: 100px;
+  }
+  .client-card__quote {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 766px) {
+  .client-card {
+    padding: 0 24px 40px;
+    width: 240px;
+    min-height: 234px;
+  }
+  .client-card__image {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 50px;
+    margin-top: -45px;
+  }
+  .client-card__quote {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+ 

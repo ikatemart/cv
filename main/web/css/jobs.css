@@ -1,0 +1,10 @@
+.jobs {}
+
+.jobs__cards {}
+
+.jobs__card {
+  margin-top: -1px;
+}
+.jobs__card:first-child {
+  margin-top: 0;
+}

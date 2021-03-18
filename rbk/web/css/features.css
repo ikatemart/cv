@@ -1,0 +1,46 @@
+.features {
+}
+
+.features__title {
+  margin-bottom: 80px;
+}
+
+.features__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
+}
+
+.features__column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.features__card {
+  margin: 20px;
+}
+
+@media (max-width: 1022px) {
+  .features__cards {
+    margin: -15px;
+  }
+  .features__card {
+    margin: 15px;
+  }
+}
+
+@media (max-width: 766px) {
+  .features__title {
+    margin-bottom: 40px;
+  }
+  .features__cards {
+    margin: -10px;
+  }
+  .features__column {
+    width: 100%;
+  }
+  .features__card {
+    margin: 10px;
+  }
+}

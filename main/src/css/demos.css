@@ -1,0 +1,25 @@
+.demos {
+  position: relative;
+}
+
+.demos__list {
+  position: relative;
+  z-index: 1;
+}
+
+.demos__demo {
+  margin-top: -1px;
+}
+.demos__demo:first-child {
+  margin-top: 0;
+}
+
+.demos__octocat {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -70px;
+  left: 50px;
+  color: #F668D7;
+  opacity: 0.7;
+}

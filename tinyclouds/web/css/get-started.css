@@ -1,0 +1,84 @@
+.get-started {
+  width: 100%;
+  background-color: #000;
+  background-image: url('../img/squares.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 60vw;
+  max-height: 80vh;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.get-started__wrapper {
+  max-width: var(--page-width);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.get-started__content {
+  position: relative;
+  background-color: rgba(255,255,255,0.9);
+  padding: 50px 40px 50px var(--page-offset);
+  width: 66%;
+}
+
+/* WHITE SQUARE */
+.get-started__content::before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100vw;
+}
+
+.get-started__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.get-started__description {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 1.4px;
+  margin-bottom: 33px;
+  width: 241px;
+  line-height: 1.4;
+}
+
+.get-started__button {
+
+}
+
+@media (max-width: 750px) {
+  .get-started {
+    height: 450px;
+    background-size: 120%;
+    margin-bottom: 100px;
+  }
+  .get-started__content {
+    top: 75px;
+  }
+}
+
+@media (max-width: 370px) {
+  .get-started {
+    background-size: cover;
+  }
+}

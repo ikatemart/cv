@@ -1,0 +1,332 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  z-index: 2;
+}
+
+/* LINE DARK */
+.header::before {
+  content: '';
+  flex-grow: 1;
+  position: relative;
+  left: calc(-1 * max(0px, min(20px, calc(100vw / 20 - 80px))));
+  background-color: rgba(36, 36, 36, 0.95);
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: var(--page-width);
+  background-color: rgba(36, 36, 36, 0.95);
+  color: #fff;
+  align-items: center;
+  padding: 0 var(--page-offset);
+  height: 74px;
+  padding-right: 0;
+  width: 100%;
+}
+
+.header__menu-button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  padding: 0 10px;
+  display: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.header__menu-button-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* LINE GREY */
+.header::after {
+  content: '';
+  background-color: rgba(151, 150, 150, 0.95);
+  flex-grow: 1;
+  position: relative;
+  top: 2px;
+  height: 65px;
+}
+
+.header__logo {
+  display: flex;
+  width: 25%;
+  align-items: center;
+  padding-right: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: .2s;
+}
+.header__logo:hover {
+  color: rgba(151, 150, 150, 0.95);
+}
+.header__logo:focus {
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+.header__logo-icon {
+  height: 31px;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  color: currentColor;
+  flex-shrink: 0;
+}
+
+.header__logo-text {
+  font-size: 16px;
+}
+
+.header__logo-text-top {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-size: 1.53em;
+}
+
+.header__logo-text-bottom {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.36em;
+  font-size: 0.84em;
+  margin-top: -4px;
+  margin-left: 3px;
+  white-space: nowrap;
+}
+
+.header__nav {
+  width: 40%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.header__nav-content {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  width: min-content;
+}
+
+.header__nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+}
+
+.header__nav-list-item {
+  list-style: none;
+}
+.header__nav-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header__nav-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  transition: .2s;
+  text-decoration: none;
+  height: 100%;
+}
+
+.header__nav-item:hover {
+  color: rgba(151, 150, 150, 0.95);
+}
+
+.header__nav-icon {
+  height: 32px;
+  margin-right: 11px;
+  color: currentColor;
+}
+.header__nav-item:first-child .header__nav-icon {
+  height: 37px;
+}
+
+.header__nav-text {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2.6px;
+}
+
+.header__sub-menu-wrapper {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 75px;
+  height: 70px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.header__sub-menu {
+  height: 100%;
+  background-color: rgba(36, 36, 36, 0.95);
+  pointer-events: all;
+  transition: transform .2s;
+}
+.header__nav-content:not(:hover) .header__sub-menu {
+  transform: translateY(calc(-100% - 1px));
+  pointer-events: none;
+}
+
+.header__sub-menu-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+} 
+.header__sub-menu-content:not(.header__sub-menu-content--open) {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header__sub-menu-item {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.header__sub-menu-item:nth-child(1) {transition-delay: .1s;}
+.header__sub-menu-item:nth-child(2) {transition-delay: .2s;}
+.header__sub-menu-item:nth-child(3) {transition-delay: .3s;}
+.header__sub-menu-item:nth-child(4) {transition-delay: .4s;}
+.header__sub-menu-item:nth-child(5) {transition-delay: .5s;}
+.header__sub-menu-item:nth-child(6) {transition-delay: .6s;}
+.header__sub-menu-item:nth-child(7) {transition-delay: .7s;}
+.header__sub-menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header__sub-menu-content--open .header__sub-menu-item {
+  opacity: 1;
+}
+.header__sub-menu-content:not(.header__sub-menu-content--open) .header__sub-menu-item {
+  transition: none;
+}
+
+
+.header__sub-menu-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 1.8px;
+  font-size: 15px;
+  font-weight: 300;
+  transition: color .2s;
+}
+.header__sub-menu-link:hover {
+  color: rgba(151, 150, 150, 0.95);
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  top: -2px;
+  position: relative;
+  width: 35%;
+  justify-content: space-between;
+  padding-right: var(--page-offset);
+}
+
+/* GREY UNDERLAY */
+.header__right::before {
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: -15px;
+  right: 0;
+  height: 65px;
+  background: rgba(125,125,125,0.9);
+}
+
+.header__right > * {
+  position: relative;
+}
+
+.header__right-link {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 40px;
+  cursor: pointer;
+  transition: .2s;
+}
+.header__right-link:hover {
+  color: rgb(206, 204, 204);
+} 
+
+.header__right-icon {
+  height: 20px;
+  color: currentColor;
+}
+
+.header__right-link-text {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: 7px;
+}
+
+.header__right-button {
+  font-size: 12px;
+}
+
+@media (max-width: 1090px) {
+  .header__right-link-text {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .header__content {
+    justify-content: unset;
+  }
+  .header__menu-button {
+    display: flex;
+    align-items: center;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__right {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .header__menu-button {
+    margin-right: 10px;
+  }
+  .header__menu-button-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .header__logo-icon {
+    height: 21px;
+    margin-right: 5px;
+  }
+  .header__logo-text {
+    font-size: 10px;
+  }
+  .header__right-button {
+    display: none;
+  }
+  .header__right::before {
+    display: none;
+  }
+  .header__right-link {
+    padding: 0 5px;
+  }
+}

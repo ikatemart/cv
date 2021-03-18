@@ -1,0 +1,55 @@
+<div class="hero">
+  <div class="hero__visual">
+    <div class="hero__visual-left">
+      <div class="hero__visual-img-wrap" data-state="active">
+       <img class="hero__visual-img" src="./img/pinksilk.jpg" alt="">
+      </div>
+      <div class="hero__visual-img-wrap">
+       <img class="hero__visual-img" src="./img/reiv.jpg" alt="">
+      </div>
+      <div class="hero__visual-img-wrap">
+       <img class="hero__visual-img" src="./img/console.jpg" alt="">
+      </div>
+    </div>
+    <div class="hero__visual-right">
+      <button class="hero__next-button">
+        Next
+      </button>
+    </div>
+  </div>
+  <div class="hero__description">
+    <div class="hero__description-content">
+      <div class="hero__numeric-paging">
+        <div class="hero__numeric-paging-figures">
+          <div class="hero__numeric-paging-figure" data-state="active"></div>
+          <div class="hero__numeric-paging-figure"></div>
+          <div class="hero__numeric-paging-figure"></div>
+        </div>
+        <div class="hero__numeric-paging-number">
+          <span data-state="active">01</span>
+          <span>02</span>
+          <span>03</span>
+        </div>
+      </div>
+      <h1 class="hero__title">
+        <span data-state="active">Tinyclouds</span>
+        <span>Tinyclouds 2</span>
+        <span>Tinyclouds 3</span>
+      </h1>
+      <p class="hero__subtitle">
+        <span data-state="active">
+          Our 2020 Official Release is available now! Find out
+          <a class="hero__link" href="#">What's New</a>.
+        </span>
+        <span>Tinyclouds 2</span>
+        <span>Tinyclouds 3</span>
+      </p>
+      <div class="hero__arrow-paging">
+        {{> arrows
+          prevArrowClass='hero__paging-prev'
+          nextArrowClass='hero__paging-next'
+        }}
+      </div>
+    </div>
+  </div>
+</div>

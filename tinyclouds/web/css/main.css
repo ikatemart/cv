@@ -1,0 +1,21 @@
+:root {
+  --page-width: 1450px;
+  --page-offset: 20px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-size: 16px;
+  background: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace; */

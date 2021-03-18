@@ -1,0 +1,16 @@
+.social-link {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.social-link__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--color-dark);
+  margin-right: var(--g2);
+}

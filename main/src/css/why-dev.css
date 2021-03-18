@@ -1,0 +1,21 @@
+.why-dev {}
+
+.why-dev__text {
+  margin: 0;
+  padding: 0;
+}
+.why-dev__text::before { /* space */
+  content: '';
+  width: 130px;
+  display: inline-block;
+}
+
+
+@media (max-width: 1150px) {
+  .why-dev__text {
+    hyphens: auto;
+  }
+  .why-dev__text::before {
+    display: none;
+  }
+}

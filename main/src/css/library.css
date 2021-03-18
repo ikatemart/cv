@@ -1,0 +1,40 @@
+.library {}
+
+.library__title {
+  margin-bottom: var(--g9);
+  position: relative;
+  left: -9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.library__books {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.library__book {
+  width: 50%;
+  margin-bottom: var(--g5);
+}
+.library__book:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 1150px) {
+  .library__title {
+    left: -5px;
+    margin-bottom: var(--g7);
+  }
+}
+
+
+@media (max-width: 740px) {
+  .library__book {
+    width: 100%;
+  }
+}

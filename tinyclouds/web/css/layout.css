@@ -1,0 +1,39 @@
+.layout {
+  background-color: F2F2F2;
+  width: 100%;
+}
+
+.layout__header {
+
+}
+
+.layout__hero {
+  width: 100%;
+}
+
+.layout__features {
+  max-width: var(--page-width);
+  margin: 50px auto 100px;
+  padding: 0 var(--page-offset);
+}
+
+.layout__get-started {
+  width: 100%;
+}
+
+.layout__post-previews {
+  max-width: var(--page-width);
+  margin: 50px auto 100px;
+  padding: 0 var(--page-offset);
+}
+
+.layout__footer {
+  
+}
+
+@media (max-width: 1030px) {
+  .layout__features {
+    max-width: none;
+    padding: 0
+  }
+}

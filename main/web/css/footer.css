@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials {}
+
+.footer__copyright {
+  align-self: flex-end;
+}
+
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__copyright {
+    align-self: flex-start;
+    margin-top: var(--g7);
+  }
+}

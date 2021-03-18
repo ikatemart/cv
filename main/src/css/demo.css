@@ -1,0 +1,31 @@
+.demo {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 35px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.demo__title {
+  margin-right: 20px;
+  letter-spacing: 2px;
+}
+
+.demo__index {
+  position: relative;
+  top: -20px;
+}
+
+.demo__arrow {
+  height: 40px;
+  margin-left: auto;
+  margin-right: var(--g2);
+  transition: transform .4s;
+}
+.demo:hover .demo__arrow {
+  transform: translate(var(--g2));
+}
+

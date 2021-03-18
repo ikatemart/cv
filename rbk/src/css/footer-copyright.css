@@ -1,0 +1,38 @@
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.footer-copyright__law {
+  font-size: 12px;
+  line-height: 22px;
+  color: #29246a;
+  font-weight: 300;
+  max-width: 75%;
+  margin-right: 20px;
+  
+}
+
+.footer-copyright__image {
+}
+
+.footer-copyright__image-link {
+  width: 176px;
+  height: 20px;
+}
+
+@media (max-width: 766px) {
+  .footer-copyright {
+    flex-direction: column;
+  }
+  .footer-copyright__law {
+    font-size: 10px;
+    line-height: 18px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-copyright__law br {
+    display: none;
+  }
+}

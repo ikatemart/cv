@@ -1,0 +1,90 @@
+<section class="solutions">
+  <div class="solutions__content">
+    <div class="solutions__column">
+      {{> heading
+        class="solutions__title"
+        tag="h2"
+        text="Отраслевые решения"
+      }}
+      <p class="solutions__description">
+        Предлагаем безопасные и надежные технологии для приема любых видов платежей в разных сферах бизнеса. Наши решения разработаны с учетом особенностей и требований каждой отрасли.
+      </p>
+      {{> button
+        class="solutions__button solutions__button--1"
+        fill=true
+        label="Смотреть платежные решения"
+      }}
+    </div>
+    <div class="solutions__column">
+      <div class="solutions__slider">
+        <div class="solutions__deck">
+          <div class="solutions__card" data-index="0">
+            {{> info-card
+              class="solutions__card-inner"
+              title="Онлайн-ритейл"
+              description="Интернет-магазины могут настроить холдирование денежных средств на карте плательщика до момента подтверждения наличия товара на своем складе."
+            }}
+          </div>
+          <div class="solutions__card" data-index="1">
+            {{> info-card
+              class="solutions__card-inner"
+              title="Тревел"
+              description="Туристические агентства получают удобные автоматизированные расчеты с туроператорами, что сокращает их операционные издержки."
+            }}
+          </div>
+          <div class="solutions__card" data-index="2">
+            {{> info-card
+              class="solutions__card-inner"
+              title="Такси"
+              description="Применение технологии оплаты привязанными банковскими картами в мобильных приложениях без 3D-Secure сокращает время оплаты у пассажиров."
+            }}
+          </div>
+          <div class="solutions__card">
+            {{> info-card
+              class="solutions__card-inner"
+              title="Сервисы по подписке"
+              description="Прием рекуррентных платежей по заданному расписанию помогает избежать просрочек платежей, и клиенты пользуются сервисами без перерыва."
+            }}
+          </div>
+          <div class="solutions__card">
+            {{> info-card
+              class="solutions__card-inner"
+              title="Игры"
+              description="Для разработчиков компьютерных игр доступны популярные среди геймеров инструменты оплаты: мобильная коммерция, электронные деньги и кошельки."
+            }}
+          </div>
+          <div class="solutions__card">
+            {{> info-card
+              class="solutions__card-inner"
+              title="ЖКХ"
+              description="Самое приятное — это пониженные тарифы при условии оплаты коммунальных услуг, электроэнергии и газа. А еще можно настроить автоплатежи или рассылку счетов."
+            }}
+          </div>
+          <div class="solutions__card">
+            {{> info-card
+              class="solutions__card-inner"
+              title="МФО и банки"
+              description="Для быстрого погашения кредитов и займов с пониженной ставкой комиссии реализована поддержка канала приёма платежей AFT (Card2Account)."
+            }}
+          </div>
+          <div class="solutions__card">
+            {{> info-card
+              class="solutions__card-inner"
+              title="Маркетплейсы"
+              description="Мгновенное разделение платежа по разным получателям при оплате заказа от нескольких поставщиков."
+            }}
+          </div>
+        </div>
+        {{> control
+          class="solutions__control"
+          down=true
+        }}
+      </div>
+      {{> button
+        class="solutions__button solutions__button--2"
+        fill=true
+        label="Смотреть платежные решения"
+      }}
+    </div>
+  </div>
+</section>

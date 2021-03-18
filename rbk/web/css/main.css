@@ -1,0 +1,47 @@
+:root {
+  --color-dark: #29246A;
+  --color-light: #fff;
+
+  --color-primary-1: #37CD8F;
+  --color-primary-2: #7C3CF0;
+  --color-primary-3: #6E54FB;
+
+  --page-width: 1105px;
+  --page-padding: 0 40px;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #29246A;
+  overflow-x: hidden;
+  min-width: 340px;
+}
+
+@media (max-width: 1022px) {
+  :root {
+    --page-width: 750px;
+    --page-padding: 0 30px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 766px) {
+  :root {
+    --page-width: 470px;
+    --page-padding: 0 25px;
+  }
+}

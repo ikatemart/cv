@@ -1,0 +1,50 @@
+.control {
+  width: 48px;
+  height: 48px;
+  background: #37CD8F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(55, 205, 143, .51);
+  cursor: pointer;
+  transition: background-color 0.3s, opacity 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+.control:hover {
+  background-color: #2eb87e;
+}
+.control:active {
+  background-color: #279b6b;
+}
+
+.control::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border: 3px solid #fff;
+  border-top-width: 0;
+  border-right-width: 0;
+  position: relative;
+}
+
+.control--down::after {
+  transform: rotate(-45deg);
+  top: -1px;
+}
+
+.control--left::after {
+  transform: rotate(45deg);
+  left: 3px;
+}
+
+.control--right::after {
+  transform: rotate(-135deg);
+  left: -2px;
+}
+
+.control--disabled {
+  opacity: .2;
+  box-shadow: none;
+  pointer-events: none;
+}

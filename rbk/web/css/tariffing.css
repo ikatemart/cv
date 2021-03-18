@@ -1,0 +1,149 @@
+.tariffing {
+
+}
+
+.tariffing__columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tariffing__column {
+
+}
+.tariffing__column:last-child {
+  width: 440px;
+  margin-left: 95px;
+}
+
+.tariffing__title {
+  margin-bottom: 40px;
+}
+
+.tariffing__link {
+  margin-bottom: 16px;
+}
+
+.tariffing__heading {
+  margin-bottom: 22px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+}
+
+.tariffing__table {
+  border-collapse: collapse;
+  font-weight: 300;
+  width: 100%;
+  text-align: left;
+}
+
+.tariffing__table-head {
+
+}
+
+.tariffing__table-body {
+
+}
+
+.tariffing__table-row {
+  border-bottom: 1px solid #e5eaff;
+}
+.tariffing__table-body .tariffing__table-row:last-child {
+  font-weight: 500;
+  border: none;
+}
+
+.tariffing__table-cell {
+  padding: 16px 0;
+}
+.tariffing__table-head .tariffing__table-cell {
+  font-weight: 300;
+  color: #bdbccd;
+  padding-top: 0;
+  padding-bottom: 8px;
+}
+.tariffing__table-cell:first-child {
+  width: 100%;
+}
+.tariffing__table-body .tariffing__table-row:last-child .tariffing__table-cell {
+  padding-bottom: 0;
+}
+
+.tariffing__button {
+  margin-top: 40px;
+}
+
+.tariffing__card--transparent {
+  background-color: transparent;
+  box-shadow: none;
+  padding-top: 0;
+}
+
+@media (max-width: 1022px) {
+  .tariffing__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .tariffing__column {
+    width: 50%;
+  }
+  .tariffing__column:last-child {
+    width: 50%;
+    margin-left: 30px;
+  }
+  .tariffing__table {
+    font-size: 14px;
+  }
+  .tariffing__table-cell {
+    padding: 22px 0;
+  }
+  .tariffing__card {
+    padding: 30px 30px 30px;
+  }
+  .tariffing__card--transparent {
+    padding-top: 0;
+  }
+  .tariffing .info-card__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .tariffing .info-card__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+}
+
+@media (max-width: 766px) {
+  .tariffing__columns {
+    flex-direction: column;
+  }
+  .tariffing__column {
+    width: 100%;
+  }
+  .tariffing__column:last-child {
+    margin-left: 0;
+    width: 100%;
+  }
+  .tariffing__button {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .tariffing__card {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+  .tariffing__card--transparent {
+    margin-bottom: 30px;
+  }
+  .tariffing .info-card__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .tariffing .info-card__description {
+    font-size: 14px; 
+    line-height: 24px;
+  }
+}

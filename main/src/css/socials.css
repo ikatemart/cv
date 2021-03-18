@@ -1,0 +1,8 @@
+.socials {}
+
+.socials__link {
+  margin-bottom: var(--g3);
+}
+.socials__link:last-child {
+  margin-bottom: 0;
+}

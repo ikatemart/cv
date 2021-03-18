@@ -1,0 +1,17 @@
+{
+  "name": "25_rbk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --input=src/index.hbs --output=dist --config=11ty-config.js",
+    "build": "eleventy --input=src/index.hbs --output=web --config=11ty-config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "html-minifier": "^4.0.0"
+  }
+}

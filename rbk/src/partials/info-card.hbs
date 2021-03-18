@@ -1,0 +1,23 @@
+<div class="{{class}} info-card">
+  {{#if image}}
+    <div class="info-card__image">
+      <img class="info-card__image-link" src="{{image}}" alt="">
+    </div>
+  {{/if}}
+  {{> heading
+    tag="h3"
+    class="info-card__title"
+    small=true
+    text=title
+  }}
+  <p class="info-card__description">
+    {{description}}
+  </p>
+  {{#if buttonLabel}}
+    {{> button
+      class="info-card__button"
+      strokeGreen=true
+      label=buttonLabel
+    }}
+  {{/if}}
+</div>

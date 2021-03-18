@@ -1,0 +1,56 @@
+<div class="layout">
+  {{> header}}
+  <div class="layout__sidebar" style="overflow: hidden;">
+    <canvas
+      data-module="PlayShapes"
+      style="
+        width: 1440px;
+        height: 100%;
+        background-color: #8395a4;
+        transform: translateX(-50%);
+      "
+    ></canvas>
+  </div>
+  <div class="layout__body">
+    <div class="layout__section layout__section--hero">
+      <div class="layout__section-content">
+        {{> hero}}
+      </div>
+    </div>
+    <div class="layout__section layout__section--why-dev">
+      <div class="layout__section-content">
+        {{> why-dev}}
+      </div>
+    </div>
+    <div class="layout__section layout__section--skills" data-nav-id="skills">
+      <div class="layout__section-content">
+        {{> skills}}
+      </div>
+    </div>
+    <div class="layout__section layout__section--web" data-nav-id="studying">
+      <div class="layout__section-content">
+        {{> web}}
+      </div>
+    </div>
+    <div class="layout__section layout__section--library">
+      <div class="layout__section-content">
+        {{> library}}
+      </div>
+    </div>
+    <div class="layout__section layout__section--jobs" data-nav-id="jobs">
+      <div class="layout__section-content">
+        {{> jobs}}
+      </div>
+    </div>
+    <div class="layout__section layout__section--demos" data-nav-id="demos">
+      <div class="layout__section-content">
+        {{> demos}}
+      </div>
+    </div>
+    <div class="layout__section layout__section--footer">
+      <div class="layout__section-content">
+        {{> footer}}
+      </div>
+    </div>
+  </div>
+</div>

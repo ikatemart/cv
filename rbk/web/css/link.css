@@ -1,0 +1,37 @@
+.link {
+  text-decoration: none;
+  color: #695cff; 
+  display: block;
+  transition: color .2s;
+  white-space: nowrap;
+}
+.link:visited {
+  color: #8232ec;
+}
+.link:focus,
+.link:hover {
+  color: #29246a;
+}
+
+.link--big {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.link--dark {
+  color: #29246a;
+  font-weight: 300;
+}
+.link--dark:visited {
+  color: #29246a;
+}
+.link--dark:hover{
+  color: #695cff;
+}
+
+@media (max-width: 1022px) {
+  .link--big {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

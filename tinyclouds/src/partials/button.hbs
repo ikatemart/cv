@@ -1,0 +1,15 @@
+<button class="
+  {{class}}
+  button
+  {{#if white}}button--white{{/if}}
+  {{#unless icon }}button--no-icon{{/unless}}
+">
+  <div class="button__label">
+    {{label}}
+  </div>
+  {{#if icon}}
+    <div class="button__icon">
+      {{{icon}}}
+    </div>
+  {{/if}} 
+</button>

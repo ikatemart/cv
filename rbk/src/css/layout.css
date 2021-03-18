@@ -1,0 +1,33 @@
+.layout {
+}
+
+.layout__row {
+  max-width: var(--page-width);
+  margin: 120px auto 0;
+}
+.layout__row:not(.layout__row--stretch) {
+  padding: var(--page-padding);
+  box-sizing: border-box;
+}
+.layout__row--stretch {
+  max-width: 100%;
+}
+.layout__row:first-child,
+.layout__row:nth-last-child(-n+2) {
+  margin-top: 0;
+}
+.layout__row--margin-top-short {
+  margin-top: 80px;
+}
+
+@media (max-width: 1022px) {
+  .layout__row {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 766px) {
+  .layout__row {
+    margin-top: 90px;
+  }
+}

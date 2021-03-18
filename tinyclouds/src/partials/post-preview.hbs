@@ -1,0 +1,62 @@
+{{!-- 
+wide
+backgroundImageUrl
+commentCount
+title
+authorAvatar
+authorName
+datetime
+date
+tags
+--}}
+<article class="
+  post-preview 
+  {{#if wide}}post-preview--wide{{/if}}
+">
+  <div
+    class="post-preview__background"
+    style="background-image: url('{{backgroundImageUrl}}')"
+  ></div>
+  <div class="post-preview__foreground">
+    <div class="post-preview__header">
+      <div class="post-preview__header-covert">
+        {{> link
+          class="post-preview__header-link"
+          href="#"
+          text="Read more"
+        }}
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 477.867 477.867"><path d="M421.649 90.317L336.316 4.983a16.871 16.871 0 00-5.564-3.703A17.232 17.232 0 00324.267 0H102.4C74.123 0 51.2 22.923 51.2 51.2v375.467c0 28.277 22.923 51.2 51.2 51.2h273.067c28.277 0 51.2-22.923 51.2-51.2V102.4a17.276 17.276 0 00-5.018-12.083zm-80.316-32.051l27.068 27.068h-27.068V58.266zm51.2 368.401c0 9.426-7.641 17.067-17.067 17.067H102.4c-9.426 0-17.067-7.641-17.067-17.067V51.2c0-9.426 7.641-17.067 17.067-17.067h204.8V102.4c0 9.426 7.641 17.067 17.067 17.067h68.267v307.2z"/></svg>
+      </div>
+      <div class="post-preview__header-visible">
+        <div class="post-preview__indication">
+          Community post
+        </div>
+        <div class="post-preview__comment-stat">
+          {{commentCount}}
+        </div>
+      </div>
+    </div>
+    <h3 class="post-preview__title">
+      {{title}}
+    </h3>
+    {{> link
+      class="post-preview__link"
+      href="#"
+      text="Read more"
+    }}
+    <footer class="post-preview__author">
+      <img class="post-preview__author-pic" src="{{authorAvatar}}">
+      <div class="post-preview__author-text">
+        <div class="post-preview__author-name">{{authorName}}</div>
+        <time class="post-preview__author-date" datetime="{{datetime}}">{{date}}</time>
+      </div>
+    </footer>
+    {{#if tags}}
+      <div class="post-preview__tags">
+        {{#each (json tags) as | tag |}}
+          <a class="post-preview__tag" href="#">{{tag}}</a>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+</article>

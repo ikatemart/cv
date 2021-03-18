@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+    <title>Катерина Март</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/book.css">
+    <link rel="stylesheet" href="./css/job-card.css">
+    <link rel="stylesheet" href="./css/demo.css">
+    <link rel="stylesheet" href="./css/social-link.css">
+
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/socials.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/why-dev.css">
+    <link rel="stylesheet" href="./css/web.css">
+    <link rel="stylesheet" href="./css/library.css">
+    <link rel="stylesheet" href="./css/jobs.css">
+    <link rel="stylesheet" href="./css/demos.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script>
+      ;(function main () {
+        const docElem = document.documentElement
+        const isTouchDevice = 'ontouchstart' in window
+        docElem.classList.toggle('touch', isTouchDevice)
+        docElem.classList.toggle('hover', !isTouchDevice)
+      })()
+    </script>
+  </head>
+  <body>
+    {{> layout}}
+    <script src="./js/scripts.js" type="module"></script>
+    <script src="./js/sidebar.min.js"></script>
+  </body>
+</html>

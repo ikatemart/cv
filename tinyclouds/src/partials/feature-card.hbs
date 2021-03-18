@@ -1,0 +1,37 @@
+<div class="
+  feature-card
+  {{class}}
+">
+  <div class="feature-card__content">
+    <div class="feature-card__icon">
+      {{{iconSvg}}}
+    </div>
+    <h3 class="feature-card__title">
+      {{{title}}}
+    </h3>
+    <p class="feature-card__description">
+      {{description}}
+    </p>
+    {{> link
+      class="feature-card__link"
+      href=url
+      text="Learn more"
+    }}
+    {{#if reviewText}}
+      <div class="feature-card__review">
+        <blockquote class="feature-card__review-quote">
+          <p class="feature-card__review-quote-p">
+            {{reviewText}}
+          </p>
+        </blockquote>
+        <div class="feature-card__review-user-sign">
+          <img class="feature-card__review-avatar" src="{{reviewAuthorAvatar}}">
+          <div class="feature-card__review-text">
+            <p class="feature-card__review-text-p">{{reviewAuthorAbout}}</p>
+            <p class="feature-card__review-text-p">{{reviewAuthorName}}</p>
+          </div>
+        </div>
+      </div>
+    {{/if}}
+  </div>
+</div>

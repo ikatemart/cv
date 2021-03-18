@@ -1,0 +1,132 @@
+.integration {
+  background-image: linear-gradient(to right, var(--color-primary-2), var(--color-primary-3));
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.integration__content {
+  display: flex;
+  max-width: var(--page-width);
+  padding: var(--page-padding);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.integration__column {
+  width: 50%;
+}
+.integration__column:first-child {
+  margin-right: 40px;
+}
+
+.integration__title {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.integration__description {
+  list-style: none;
+  font-weight: 300;
+  margin-bottom: 49px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.integration__description-item {
+  padding-left: 24px;
+  margin-bottom: 16px;
+  position: relative;
+}
+.integration__description-item:last-child {
+  margin-bottom: 0;
+}
+
+/* list style marker */
+.integration__description-item::before {
+  position: absolute;
+  top: 8px;
+  left: 2px;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+}
+
+.integration__button {
+
+}
+
+.integration__code-window {
+  width: 100%;
+  height: 370px;
+  background-image: linear-gradient(to bottom, #1E1957 12%, #26206D 12%);
+  box-shadow: 0 9px 29px #4334ea;
+  color: white;
+  border-radius: 3px;
+  position: relative;
+}
+
+/* window controls */
+.integration__code-window::after {
+  content: '';
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  position: absolute;
+  background: #30288A;
+  top: 18px;
+  left: 18px;
+  box-shadow: 25px 0 0 #30288A, 50px 0 0 #30288A;
+}
+
+.integration__code {
+  position: relative;
+  top: 50px;
+  left: -29px;
+  line-height: 24px;
+  letter-spacing: -.8px;
+}
+
+.integration__code-purple {
+  color: #665dc9;
+}
+
+.integration__code-green {
+  color: #38CD8F;
+}
+
+@media (max-width: 1150px) {
+  .integration__code-window {
+    width: 125%;
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1022px) {
+  .integration {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 766px) {
+  .integration {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .integration__column {
+    width: 100%;
+  }
+  .integration__column:last-child {
+    display: none;
+  }
+  .integration__description {
+    margin-bottom: 0;
+  }
+  .integration__button {
+    width: 100%;
+    margin-top: 30px;
+  }
+}

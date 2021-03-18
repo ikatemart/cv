@@ -1,0 +1,84 @@
+.button {
+  font-family: inherit;
+  padding: 0 33px;
+  line-height: 51px;
+  border-radius: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  transition: all .2s;
+  user-select: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button--fill {
+  background: #37CD8F;
+  color: #fff;
+}
+.button--fill:hover {
+  background: #2eb87e;
+}
+.button--fill:active {
+  background: #279b6b;
+}
+
+.button--shadow-green {
+  box-shadow: 0 10px 25px rgba(55, 205, 143, .5);
+}
+.button--shadow-green:hover,
+.button--shadow-green:active  {
+  box-shadow: 0 5px 15px rgba(48, 181, 126, .7);
+}
+
+.button--shadow-blue {
+  box-shadow: 0 10px 25px 0 rgba(65, 54, 181, .45);
+}
+.button--shadow-blue:hover,
+.button--shadow-blue:active {
+  box-shadow: 0 5px 15px 0 rgba(65, 54, 181, .45);
+}
+
+.button--stroke-green {
+  color: #37CD8F;
+  border: 2px solid currentColor;
+}
+.button--stroke-green:hover {
+  background: hsla(0, 0%, 100%, .15);
+}
+.button--stroke-green:active {
+  background: hsla(0,0%,100%,.4);
+}
+
+.button--stroke-green-1 {
+  color: #37CD8F;
+  border: 2px solid currentColor;
+}
+.button--stroke-green-1:hover {
+  background: rgba(55,205,143,.15);
+}
+.button--stroke-green-1:active {
+  background:rgba(55,205,143,.3);
+}
+
+.button--stroke-white {
+  color: #fff;
+  border: 2px solid currentColor;
+}
+.button--stroke-white:hover {
+  background: hsla(0,0%,100%,.15);
+}
+.button--stroke-white:active {
+  background: hsla(0,0%,100%,.4);
+}
+
+@media (max-width: 1022px) {
+  .button {
+    font-size: 14px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 766px) {}

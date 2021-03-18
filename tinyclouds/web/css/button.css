@@ -1,0 +1,97 @@
+.button {
+  border: none;
+  border-radius: 70px;
+  font-size: 14px;
+  padding: 0.7em 1.4em;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: #fff;
+}
+.button:hover {
+  color: #000;
+}
+.button--white {
+  color: #000;
+}
+.button--white:hover {
+  color: #fff;
+}
+.button--no-icon {
+  padding: 1em 1.4em;
+}
+
+/* BACKGROUND */
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 70px;
+  /* разобраться! */
+  background-image: linear-gradient(135deg,#000 33%,#cdcbcd 33%,#cdcbcd 66%,#000 66%);
+  background-size: 400% 200%;
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  /*  */
+  transition: transform .4s, background-position .4s;
+}
+.button:hover::before {
+  transform: scale(1.05);
+  background-position: 55% 50%;
+}
+.button--white::before {
+  background-image: linear-gradient(135deg,#fff 33%,#000 33%,#000 66%,#fff 66%);
+}
+
+.button__label {
+  transition: transform .4s;
+  position: relative;
+}
+.button:hover .button__label {
+  transform: scale(0.9);
+}
+
+.button__icon {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  padding: 8px;
+  margin-left: 15px;
+  z-index: 1;
+  transition: .4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover .button__icon {
+  border-color: #000;
+}
+
+.button__icon svg {
+  height: 22px;
+  transition: .4s; 
+  position: relative;
+  color: #fff;
+}
+.button:hover .button__icon svg {
+  color: #000;
+}
+
+@media (max-width: 370px) {
+  .button{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+}
+
+

@@ -1,0 +1,31 @@
+{{!--
+class
+title
+company
+website
+period
+summary
+duties
+--}}
+<div class="job-card {{#if expanded}}job-card--expanded{{/if}} {{class}}">
+  <button class="job-card__button">
+    <div class="job-card__main-info">
+      <h3 class="job-card__title text-18">{{title}}</h3>
+      <div class="job-card__company">{{company}}</div>
+    </div>
+    <div class="job-card__period text-18">{{period}}</div>
+    <div class="job-card__expand-icon"></div>
+  </button>
+  <div class="job-card__details">
+    <div class="job-card__details-content">
+      <p class="job-card__summary text-30">
+        {{{summary}}}
+      </p>
+      <ul class="job-card__duties">
+        {{#each (json duties) as | duty |}}
+          <li class="job-card__duty">{{duty}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
