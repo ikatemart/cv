@@ -8,20 +8,6 @@
   right: 0;
   bottom: 0;
   width: var(--sidebar-width);
-  filter: blur(0.2px);
-  background: linear-gradient(
-    178deg,
-    #8495a4 0,
-    #8495a4 20%,
-    #728392 20%,
-    #728392 40%,
-    #3b4b5b 40%,
-    #3b4b5b 60%,
-    #2d2f3e 60%,
-    #2d2f3e 80%,
-    #2a2a38 80%,
-    #2a2a38 100%
-  );
 }
 
 .layout__body {
@@ -40,14 +26,14 @@
   height: 100vh;
   min-height: 740px;
   max-height: 900px;
-  margin-bottom: var(--g12);
   box-shadow: 0 6px 27px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
 }
 .layout__section--demos {
-  margin-bottom: 0 !important;
   background: var(--color-dark);
   padding-top: var(--g7);
   padding-bottom: var(--g16);
+  margin-bottom: var(--g12);
 }
 .layout__section--footer {
   margin: 0 !important;
