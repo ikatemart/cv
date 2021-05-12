@@ -7,10 +7,12 @@
 
 .footer__copyright {
   align-self: flex-end;
+  position: relative;
+  top: -5px;
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 1150px) {
   .footer {
     flex-direction: column;
   }

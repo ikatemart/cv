@@ -1,8 +1,19 @@
-.socials {}
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  width: 520px;
+  max-width: 100%;
+  margin-bottom: calc(-1 * var(--g3));
+}
 
 .socials__link {
   margin-bottom: var(--g3);
+  width: 50%;
 }
-.socials__link:last-child {
-  margin-bottom: 0;
+
+@media (max-width: 560px) {
+  .socials__link {
+    width: 100%;
+  }
 }
+
