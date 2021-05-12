@@ -19,6 +19,7 @@ module.exports = (config) => {
   config.addShortcode('equal', eq)
   config.addShortcode('conc', concat)
   config.addShortcode('json', json)
+  config.addShortcode('version', generateVersion)
   return {
     dir: {
       includes: 'partials'
@@ -36,4 +37,8 @@ function concat(...args) {
 
 function json(str) {
   return JSON.parse(str)
+}
+
+function generateVersion() {
+  return Date.now()
 }
