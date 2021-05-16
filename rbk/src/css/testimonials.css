@@ -23,21 +23,19 @@
 }
 
 .testimonials__link {
-
+  display: flex;
+  align-items: center;
 }
 
 /* chevron icon */
 .testimonials__link::after {
   content: '';
-  display: inline-block;
-  position: relative;
   width: 6px;
   height: 6px;
   border-width: 0 2px 2px 0;
   border-style: solid;
   transform: rotate(-45deg);
   margin-left: 5px;
-  top: -2px;
   transition: all .3s;
 }
 .testimonials__link:hover::after {

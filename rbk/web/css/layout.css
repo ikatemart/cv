@@ -12,8 +12,9 @@
 .layout__row--stretch {
   max-width: 100%;
 }
-.layout__row:first-child,
-.layout__row:nth-last-child(-n+2) {
+.layout__row:nth-child(1),
+.layout__row:nth-child(2),
+.layout__row:nth-last-child(-n+3) {
   margin-top: 0;
 }
 .layout__row--margin-top-short {
