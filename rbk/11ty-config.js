@@ -16,10 +16,9 @@ module.exports = (config) => {
         collapseWhitespace: true
       })
     }
-
-    return conent
+    return content
   })
-
+  config.addShortcode('version', generateVersion)
   return {
     dir: {
       includes: 'partials',
@@ -35,4 +34,8 @@ function eq(a, b) {
 
 function concat(...args) {
   return args.join('')
+}
+
+function generateVersion() {
+  return Date.now()
 }
