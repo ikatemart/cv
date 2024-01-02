@@ -1,6 +1,4 @@
-### CV
-* https://ikatemart.github.io/cv/main/web/
+### Demo Projects
 
-### Демо проекты
-* https://ikatemart.github.io/cv/rbk/web/ 
-* https://ikatemart.github.io/cv/tinyclouds/web/
+- https://ikatemart.github.io/cv/rbk/web/
+- https://ikatemart.github.io/cv/tinyclouds/web/
