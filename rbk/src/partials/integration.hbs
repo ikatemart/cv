@@ -4,34 +4,34 @@
       {{> heading
         tag="h2"
         class="integration__title"
-        text="Простая интеграция"
+        text="Simple Integration"
       }}
       <ul class="integration__description">
         <li class="integration__description-item">
-          Подробная документация с примерами, чтобы интегрироваться без техподдержки;
+          Detailed documentation with examples to integrate without technical support;
         </li>
         <li class="integration__description-item">
-          Множество вариантов подключения: от популярных CMS систем и платежных ссылок до API;
+          Numerous connection options: from popular CMS systems and payment links to APIs;
         </li>
         <li class="integration__description-item">
-          Быстрая кастомизация пэйформ прямо на сервере;
+          Quick customization of payforms directly on the server;
         </li>
         <li class="integration__description-item">
-          Крутой Open API, специально для программистов.
+          Cool Open API, specifically designed for programmers.
         </li>
       </ul>
       {{> button
         class="integration__button"
         fill=true 
-        label="Смотреть документацию"
+        label="View Documentation"
       }}
     </div>
     <div class="integration__column">
       <div class="integration__code-window">
         <pre class="integration__code">
           <code class="integration__code-lines">
-&lt;<span class="integration__code-purple">form</span> action=<span class="integration__code-green">&quot;https://&lt;your-server-side&gt;&quot;</span> method=<span class="integration__code-green">&quot;GET&quot;</span>&gt;
-  &lt;<span class="integration__code-purple">script</span> src=<span class="integration__code-green">&quot;https://checkout.rbk.money/checkout.js&quot;</span>
+&lt;<span class="integration__code-purple">form</span> action=<span class="integration__code-green">&quot;https://&lt;url&gt;&quot;</span> method=<span class="integration__code-green">&quot;GET&quot;</span>&gt;
+  &lt;<span class="integration__code-purple">script</span> src=<span class="integration__code-green">&quot;https://rbk.money/checkout.js&quot;</span>
     class=<span class="integration__code-green">&quot;rbkmoney-checkout&quot;</span>
     data-invoice-id=<span class="integration__code-green">&quot;string&quot;</span>
     data-invoice-access-token=<span class="integration__code-green">&quot;string&quot;</span> 

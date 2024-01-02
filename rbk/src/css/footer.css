@@ -67,12 +67,8 @@
 
 .footer__contacts-column {
 }
-.footer__contacts-column--phone {
-  flex-basis: 50%;
-  padding-right: 36px;
-}
 .footer__contacts-column--mail {
-  flex-basis: 25%;
+  flex-basis: 75%;
   padding-right: 36px;
 }
 .footer__contacts-column--social {
