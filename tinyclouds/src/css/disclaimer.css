@@ -1,5 +1,5 @@
 body {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 
 .disclaimer {
@@ -10,11 +10,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fffbe5;
-  height: 50px;
+  background: #ffff9d;
+  height: 70px;
   text-align: center;
-  border-top: 1px solid #d8d7d8;
-  font-size: 12px;
+  border-top: 1px solid #e4e500;
+  font-size: 16px;
+  line-height: 1.6;
   box-sizing: border-box;
   z-index: 10;
 }

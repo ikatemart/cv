@@ -1,7 +1,7 @@
 .footer-copyright {
   display: flex;
   justify-content: space-between;
-  padding: 24px 0 44px;
+  padding: 24px 0;
 }
 
 .footer-copyright__law {
